@@ -1,5 +1,6 @@
 #include "String.h"
 #include <iostream>
+#include <cctype>
 using namespace std;
 
 String::String() { //declaring constructor
@@ -136,4 +137,67 @@ String& String::Prepend(const String& _str) {
     m_data = newData;
 
     return *this;
+}
+
+/// <summary>
+/// return the const char * that is usable with std::cout. eg: std::cout<< str.cstr() << std::endl;
+/// </summary>
+/// <returns></returns>
+const char* String::CStr() const {
+    return m_data;
+}
+
+/// <summary>
+/// Converts all characters to lowercase
+/// </summary>
+/// <returns></returns>
+String& String::ToLower() {
+    for (size_t i = 0; i < Length(); ++i) {
+        m_data[i] = std::tolower(m_data[i]); // lowercase current string char in array.
+    }
+    return *this;
+
+}
+
+/// <summary>
+/// Converts all characters to uppercase
+/// </summary>
+/// <returns></returns>
+String& String::ToUpper() {
+    for (size_t i = 0; i < Length(); ++i) {
+        m_data[i] = std::toupper(m_data[i]); // uppercase current string char in array.
+    }
+    return *this;
+
+}
+
+/// <summary>
+/// Returns the location of the findString. If not found, return -1 (relies on String::Find)
+/// </summary>
+/// <param name="_str"></param>
+/// <returns></returns>
+size_t String::Find(const String& _str) {
+    return Find(0, _str);
+}
+
+/// <summary>
+/// Returns the location of the strToFind. Beginning the search from startIndex. If not found, return -1
+/// </summary>
+/// <param name="_startIndex"></param>
+/// <param name="_str"></param>
+/// <returns></returns>
+size_t String::Find(size_t _startIndex, const String& _str) {
+    //If Index is out of bounds, return -1
+    if (_startIndex >= Length())
+    {
+        return -1;
+    }
+    const char* startPos = strstr(m_data + _startIndex, _str.m_data); //cstring strstr() to find first occurence
+    if (startPos != nullptr)
+    {
+        return startPos - m_data;
+    }
+    else {
+        return -1;
+    }
 }
