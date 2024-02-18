@@ -310,7 +310,7 @@ bool String::operator<(const String& _other) {
     return strcmp(m_data, _other.m_data) < 0;
 }
 
-String& String::operator+=(const String& _other) {
+String String::operator+=(const String& _other) {
     // Calculate the new length of the string after appending
     size_t newLength = Length() + _other.Length();
 
