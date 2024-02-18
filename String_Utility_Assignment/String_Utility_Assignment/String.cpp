@@ -83,3 +83,57 @@ bool String::EqualTo(const String& _other) const {
     }
     return true; // all checks pass, return true.
 }
+
+/// <summary>
+/// Input a string to add to the end of the string
+/// </summary>
+/// <param name="_str"></param>
+/// <returns></returns>
+String& String::Append(const String& _str) {
+    //Calculate length of new combined array
+    size_t newLength = Length() + _str.Length();
+
+    //Allocate the memory for our new string data.
+    char* newData = new char[newLength + 1]; // Remember to allocate the null terminator.
+
+    //Copy current string array into the new data.
+    strcpy(newData, m_data);
+
+    //then we concatenate the string
+    strcat(newData, _str.m_data);
+
+    //delete the old memory from our old string
+    delete[] m_data;
+
+    //update to point at new data
+    m_data = newData;
+
+    return *this;
+}
+
+/// <summary>
+/// Input a string to add the beginning of the string
+/// </summary>
+/// <param name="_str"></param>
+/// <returns></returns>
+String& String::Prepend(const String& _str) {
+    //Calculate and determine new size of the string after prepending
+    size_t newLength = Length() + _str.Length();
+
+    //Allocate the memory for the new string data
+    char* newData = new char[newLength + 1]; // Remember to allocate the null terminator.
+
+    //Copy the string from _str to the new data array
+    strcpy(newData, _str.m_data);
+
+    //Append string to the new data string
+    strcat(newData, m_data);
+
+    //delete old string data
+    delete[] m_data;
+
+    //update to point at new data
+    m_data = newData;
+
+    return *this;
+}
