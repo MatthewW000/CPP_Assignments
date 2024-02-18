@@ -201,3 +201,56 @@ size_t String::Find(size_t _startIndex, const String& _str) {
         return -1;
     }
 }
+
+/// <summary>
+/// Replaces all occurrences of findString with replaceString this code is copied from STACKOVERFLOW
+/// </summary>
+/// <param name="_find"></param>
+/// <param name="_replace"></param>
+/// <returns></returns>
+String& String::Replace(const String& _find, const String& _replace) {
+    size_t startPos = 0;
+    while ((startPos = Find(startPos, _find)) != -1) {
+        // Create a new string to hold the replaced content
+        string replacedContent = string(m_data, m_data + startPos) + _replace.CStr() +
+            string(m_data + startPos + _find.Length());
+
+        // Allocate memory for the new string data
+        char* newData = new char[replacedContent.length() + 1]; // +1 for null terminator
+
+        // Copy the replaced content to the new buffer
+        strcpy(newData, replacedContent.c_str());
+
+        // Deallocate the old string data
+        delete[] m_data;
+
+        // Update m_data to point to the new buffer
+        m_data = newData;
+
+        startPos += _replace.Length(); // Move the start position past the replaced substring
+    }
+    return *this;
+}
+
+
+/// <summary>
+/// Wait for input in the console window and store the result
+/// </summary>
+/// <returns></returns>
+String& String::ReadFromConsole() {
+    // Assume maximum input size is 1024 characters
+    const size_t maxInputSize = 1024;
+    char input[maxInputSize];
+    cin.getline(input, maxInputSize);
+    *this = input; // Assign the input to the string
+    return *this;
+}
+
+/// <summary>
+/// Write the string to the console window.
+/// </summary>
+/// <returns></returns>
+String& String::WriteToConsole() {
+    cout << m_data;
+    return *this;
+}
