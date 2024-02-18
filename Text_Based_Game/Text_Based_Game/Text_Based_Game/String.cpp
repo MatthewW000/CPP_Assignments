@@ -2,7 +2,7 @@
 #include "String.h"
 #include <iostream>
 #include <cctype>
-#include <cstring>
+//#include <cstring>
 using namespace std;
 
 String::String() { //declaring constructor
