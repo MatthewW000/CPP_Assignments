@@ -51,7 +51,7 @@ private:
 	/*
 	* Put your internal data structures and members here
 	*/
-	char* m_data; // Pointer to dynamically allocated character array
+	char* m_data = new char[1]; // Pointer to dynamically allocated character array
 };
 
 #endif

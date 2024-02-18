@@ -1,3 +1,2 @@
-﻿  String_Utility_Assignment.cpp
-String_Utility_Assignment.obj : error LNK2019: unresolved external symbol "public: __cdecl String::String(void)" (??0String@@QEAA@XZ) referenced in function main
-C:\Users\User\OneDrive\Documents\AIE_Year_1\Assignments - intro to C++\String_Utility_Assignment\x64\Debug\String_Utility_Assignment.exe : fatal error LNK1120: 1 unresolved externals
+﻿  String.cpp
+  String_Utility_Assignment.vcxproj -> C:\Users\User\OneDrive\Documents\AIE_Year_1\CPP_Assignments\String_Utility_Assignment\x64\Debug\String_Utility_Assignment.exe

@@ -1,11 +1,41 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "String.h"
 #include <iostream>
 #include <cctype>
+#include <cstring>
 using namespace std;
 
 String::String() { //declaring constructor
-	cout << " ++ constructor activated " << endl;
+    m_data = new char[1];
+    m_data[0] = '\0'; // Ensures an empty string
+    cout << "++ constructor activated" << endl;
 }
+
+/// <summary>
+/// overload contructor for handling the const char* to allocate enough space for the string and the null terminator, then copies string into 'm_data'
+/// </summary>
+/// <param name="_str"></param>
+String::String(const char* _str) {
+    if (_str) {
+        m_data = new char[strlen(_str) + 1]; // +1 for the null terminator
+        strcpy(m_data, _str);
+    }
+    else {
+        m_data = new char[1];
+        m_data[0] = '\0'; // Handle null input by creating an empty string
+    }
+    cout << "++ constructor activated" << endl;
+}
+
+/// <summary>
+/// overload constructor to implement the copy constructor correctly, allocating memory for m_data.
+/// </summary>
+/// <param name="_other"></param>
+String::String(const String& _other) : m_data(new char[_other.Length() + 1]) {
+    strcpy(m_data, _other.m_data); // Copy the content
+    cout << "++ constructor activated" << endl;
+}
+
 String::~String() { //declaring destructor
 	cout << "destructor activated";
     delete[] m_data;
