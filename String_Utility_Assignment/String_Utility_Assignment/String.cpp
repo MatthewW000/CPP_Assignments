@@ -254,3 +254,80 @@ String& String::WriteToConsole() {
     cout << m_data;
     return *this;
 }
+
+/// <summary>
+/// Returns true if lhs == rhs.
+/// </summary>
+/// <param name="_other"></param>
+/// <returns></returns>
+bool String::operator==(const String& _other) {
+    return strcmp(m_data, _other.m_data) == 0;
+}
+
+/// <summary>
+/// returns true if lhs is not equal to rhs.
+/// </summary>
+/// <param name="_other"></param>
+/// <returns></returns>
+bool String::operator!=(const String& _other) {
+    return !(*this == _other);
+}
+
+/// <summary>
+/// Replaces the characters in lhs with the characters in rhs.
+/// </summary>
+/// <param name="_str"></param>
+/// <returns></returns>
+String& String::operator=(const String& _str) {
+    if (this != &_str) { // Check for self-assignment
+        delete[] m_data; // Deallocate old data
+        m_data = new char[_str.Length() + 1]; // Allocate new memory
+        strcpy(m_data, _str.m_data); // Copy data
+    }
+    return *this;
+}
+
+
+/// <summary>
+/// Subscript operator returns character located at position n.
+/// </summary>
+/// <param name="_index"></param>
+/// <returns></returns>
+char& String::operator[](size_t _index) {
+    return m_data[_index];
+}
+
+/// <summary>
+/// Returns true if this string comes before rhs in the alphabet (const version)
+/// </summary>
+/// <param name="_index"></param>
+/// <returns></returns>
+const char& String::operator[](size_t _index) const {
+    return m_data[_index];
+}
+
+bool String::operator<(const String& _other) {
+    return strcmp(m_data, _other.m_data) < 0;
+}
+
+String& String::operator+=(const String& _other) {
+    // Calculate the new length of the string after appending
+    size_t newLength = Length() + _other.Length();
+
+    // Allocate memory for the new string data
+    char* newData = new char[newLength + 1]; // +1 for null terminator
+
+    // Copy the current string data to the new buffer
+    strcpy(newData, m_data);
+
+    // Append the string data from rhs to the new buffer
+    strcat(newData, _other.m_data);
+
+    // Deallocate the old string data
+    delete[] m_data;
+
+    // Update m_data to point to the new buffer
+    m_data = newData;
+
+    return *this;
+}
