@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "String.h"
+#include "Player.h"
 #include "Map.h" // Make sure to include the Map class header
 #include <iostream>
 #include <cctype>
@@ -45,6 +46,10 @@ int main() {
     Map gameMap(mapSize);
     gameMap.Print(); // Display the initial map
 
+    //Initialize a player 
+    Player player (100, 10, 50); // has standard health, mana, attack features.
+    //player.SetPosition(0, 0);
+
     // Initialize your custom String class for player input
     String playerInput;
 
@@ -62,6 +67,18 @@ int main() {
             cout << "You flee to the outskirts, never to return to MALL." << endl;
             break; // Exit the loop and end the game
         }
+        else if (playerInput.Find("move ") == 0) { // Check if the command starts with "move "
+            // Extract direction part of the command
+            String direction = playerInput; // Copy the full command first
+            direction.Replace("move ", ""); // Remove "move " to get just the direction
+
+            player.Move(direction); // Move the player based on the extracted direction
+            //gameMap.Print(); // commented out for now to see when is best time to update map.
+        }
+
+        //Update the map
+        gameMap.SetPlayerPosition(player.GetX(), player.GetY());
+        gameMap.Print();
 
         // Here, you can add more code to handle other commands
         // For example, move the player, interact with the map, etc.

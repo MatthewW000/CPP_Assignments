@@ -8,7 +8,7 @@ using namespace std;
 String::String() { //declaring constructor
     m_data = new char[1];
     m_data[0] = '\0'; // Ensures an empty string
-    cout << "++ constructor activated" << endl;
+    //cout << "++ constructor activated" << endl;
 }
 
 /// <summary>
@@ -24,7 +24,7 @@ String::String(const char* _str) {
         m_data = new char[1];
         m_data[0] = '\0'; // Handle null input by creating an empty string
     }
-    cout << "++ constructor activated" << endl;
+    //cout << "++ constructor activated" << endl;
 }
 
 /// <summary>
@@ -33,11 +33,11 @@ String::String(const char* _str) {
 /// <param name="_other"></param>
 String::String(const String& _other) : m_data(new char[_other.Length() + 1]) {
     strcpy(m_data, _other.m_data); // Copy the content
-    cout << "++ constructor activated" << endl;
+    //cout << "++ constructor activated" << endl;
 }
 
 String::~String() { //declaring destructor
-    cout << "destructor activated";
+   // cout << "destructor activated";
     delete[] m_data;
 }
 

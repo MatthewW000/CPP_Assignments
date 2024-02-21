@@ -4,7 +4,7 @@
 using namespace std;
 
 //Constructor
-Map::Map(int size) :size(size) {
+Map::Map(int size) :size(size), playerX(-1), playerY(-1) {
 	Initialize();
 }
 
@@ -32,6 +32,12 @@ void Map::Initialize() {
 	}
 }
 
+void Map::SetPlayerPosition(int x, int y) {
+	// Later we will add functionality to clear the old player position.
+	playerX = x;
+	playerY = y;
+}
+
 
 /// <summary>
 /// A Print function to print the current elements around the map.
@@ -39,8 +45,13 @@ void Map::Initialize() {
 void Map::Print() const {
 	for (int i = 0; i < size; ++i) {
 		for (int j = 0; j < size; ++j) {
-			cout << map[i][j] << " "; // Print each cell with a space
+			if (i == playerY && j == playerX) {
+				cout << "P "; // Print 'P' for the player's position
+			}
+			else {
+				cout << map[i][j] << " ";
+			}
 		}
-		cout << endl; // New line after each row
+		cout << endl;
 	}
 }
