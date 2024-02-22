@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Documents\\AIE_Year_1\\CPP_Assignments\\FILE.IO\\FILE_IO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BF61084-65F5-45C8-836F-B3726AF24F85}|FILE_IO\\FILE_IO.vcxproj|C:\\Users\\User\\OneDrive\\Documents\\AIE_Year_1\\CPP_Assignments\\FILE.IO\\FILE_IO\\FILE_IO\\FILE_IO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BF61084-65F5-45C8-836F-B3726AF24F85}|FILE_IO\\FILE_IO.vcxproj|solutionrelative:FILE_IO\\FILE_IO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FILE_IO.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\AIE_Year_1\\CPP_Assignments\\FILE.IO\\FILE_IO\\FILE_IO\\FILE_IO.cpp",
+              "RelativeDocumentMoniker": "FILE_IO\\FILE_IO.cpp",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\AIE_Year_1\\CPP_Assignments\\FILE.IO\\FILE_IO\\FILE_IO\\FILE_IO.cpp",
+              "RelativeToolTip": "FILE_IO\\FILE_IO.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-22T05:15:45.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
