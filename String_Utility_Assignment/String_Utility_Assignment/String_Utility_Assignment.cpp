@@ -51,7 +51,26 @@ int main() {
     // Use the Append function
     initialString.Append(stringToAppend);
 
-    cout << initialString;
+    cout << initialString << endl;
+
+    String prependString(" Me");
+    String stringToPrepend("Help");
+
+    prependString.Prepend(stringToPrepend);
+
+    cout << prependString << endl;
+
+    //no need to test CStr as this will just return the member data in a String.
+
+    //return an uppercase and lowercase "help me"
+    cout << prependString.ToLower() << endl;
+    cout << prependString.ToUpper() << endl;
+
+    cout << prependString.Find(2, "E") << endl;
+
+    prependString.Replace("E", "z");
+
+    cout << prependString << endl;
 
     return 0;
 }
