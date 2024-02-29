@@ -1,0 +1,33 @@
+Date: 29/02/2024 Time: 14:41:20
+Test 0: Length: Successful
+Test 1: CharacterAt: Successful
+Test 2: EqualTo: Successful
+Test 3: Append: Successful
+Test 4: Prepend: SuccessfulDate: 29/02/2024 Time: 14:49:30
+Test 0: Length: Successful
+Test 1: CharacterAt: Successful
+Test 2: EqualTo: Successful
+Test 3: Append: Successful
+Test 4: Prepend: SuccessfulDate: 29/02/2024 Time: 14:50:54
+Test 0: Length: Successful
+Test 1: CharacterAt: Successful
+Test 2: EqualTo: Successful
+Test 3: Append: Successful
+Test 4: Prepend: SuccessfulSuccess rate: 100%
+
+Date: 29/02/2024 Time: 14:51:25
+Test 0: Length: Successful
+Test 1: CharacterAt: Successful
+Test 2: EqualTo: Successful
+Test 3: Append: Successful
+Test 4: Prepend: Successful
+Success rate: 100%
+
+Date: 29/02/2024 Time: 16:28:15
+Test 0: Length: Successful
+Test 1: CharacterAt: Successful
+Test 2: EqualTo: Successful
+Test 3: Append: Successful
+Test 4: Prepend: Successful
+Success rate: 100%
+

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7686B7C-9817-4632-8CA8-C7ABB56E6650}|String_Utility_Assignment\\String_Utility_Assignment.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String_Utility_Assignment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A7686B7C-9817-4632-8CA8-C7ABB56E6650}|String_Utility_Assignment\\String_Utility_Assignment.vcxproj|solutionrelative:String_Utility_Assignment\\String_Utility_Assignment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7686B7C-9817-4632-8CA8-C7ABB56E6650}|String_Utility_Assignment\\String_Utility_Assignment.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A7686B7C-9817-4632-8CA8-C7ABB56E6650}|String_Utility_Assignment\\String_Utility_Assignment.vcxproj|solutionrelative:String_Utility_Assignment\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7686B7C-9817-4632-8CA8-C7ABB56E6650}|String_Utility_Assignment\\String_Utility_Assignment.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A7686B7C-9817-4632-8CA8-C7ABB56E6650}|String_Utility_Assignment\\String_Utility_Assignment.vcxproj|solutionrelative:String_Utility_Assignment\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7686B7C-9817-4632-8CA8-C7ABB56E6650}|String_Utility_Assignment\\String_Utility_Assignment.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String_Utility_Assignment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A7686B7C-9817-4632-8CA8-C7ABB56E6650}|String_Utility_Assignment\\String_Utility_Assignment.vcxproj|solutionrelative:String_Utility_Assignment\\String_Utility_Assignment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +30,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "String_Utility_Assignment.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String_Utility_Assignment.cpp",
               "RelativeDocumentMoniker": "String_Utility_Assignment\\String_Utility_Assignment.cpp",
               "ToolTip": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String_Utility_Assignment.cpp",
               "RelativeToolTip": "String_Utility_Assignment\\String_Utility_Assignment.cpp",
-              "ViewState": "AQIAADAAAAAAAAAAAAAiwEgAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-18T08:28:29.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "String.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String.cpp",
               "RelativeDocumentMoniker": "String_Utility_Assignment\\String.cpp",
               "ToolTip": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String.cpp",
               "RelativeToolTip": "String_Utility_Assignment\\String.cpp",
-              "ViewState": "AQIAAF0BAAAAAAAAAAAAAGkBAAARAAAA",
+              "ViewState": "AQIAAFEBAAAAAAAAAAAiwFgBAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-18T02:33:27.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "String.h",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String.h",
               "RelativeDocumentMoniker": "String_Utility_Assignment\\String.h",
               "ToolTip": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\String_Utility_Assignment\\String_Utility_Assignment\\String.h",
               "RelativeToolTip": "String_Utility_Assignment\\String.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAABAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADgAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-18T02:33:05.281Z"
+              "WhenOpened": "2024-02-18T02:33:05.281Z",
+              "EditorCaption": ""
             }
           ]
         }
