@@ -1,10 +1,11 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 #include "String.h"
+#include "GameObject.h"
 
 
 #pragma once
-class Player
+class Player : public GameObject
 {
 public:
 	Player(int health, int attack, int mana);

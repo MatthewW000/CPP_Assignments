@@ -1,5 +1,6 @@
 #pragma once
-class Map
+#include "GameObject.h"
+class Map : public GameObject
 {
 public:
 	Map(int _size); // Constructor to take map size

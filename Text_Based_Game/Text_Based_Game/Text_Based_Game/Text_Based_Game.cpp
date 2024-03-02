@@ -53,7 +53,7 @@ int main() {
     // Initialize your custom String class for player input
     String playerInput;
 
-    while (true) {
+    while (playerInput != "run away") {
         cout << "Type 'run away' to exit the game" << endl;
 
         // Use the ReadFromConsole method of your String class to get input
