@@ -48,6 +48,10 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "GameObject.h",
@@ -57,12 +61,7 @@
               "RelativeToolTip": "Text_Based_Game\\GameObject.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-29T05:57:34.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-02-29T05:57:34.923Z"
             },
             {
               "$type": "Document",
@@ -74,8 +73,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\delete_scalar.cpp",
               "ViewState": "AQIAABYAAAAAAAAAAAArwCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-19T13:51:20.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-19T13:51:20.762Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "Text_Based_Game\\Player.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-19T07:38:27.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-19T07:38:27.787Z"
             },
             {
               "$type": "Document",
@@ -113,8 +110,7 @@
               "RelativeToolTip": "Text_Based_Game\\Map.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-18T10:19:00.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-18T10:19:00.899Z"
             },
             {
               "$type": "Document",
@@ -126,8 +122,7 @@
               "RelativeToolTip": "Text_Based_Game\\Map.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-18T10:10:50.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-18T10:10:50.759Z"
             },
             {
               "$type": "Document",
@@ -139,8 +134,7 @@
               "RelativeToolTip": "Text_Based_Game\\String.cpp",
               "ViewState": "AQIAAE4BAAAAAAAAAAAiwGsBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-18T09:46:41.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-18T09:46:41.569Z"
             },
             {
               "$type": "Document",
@@ -152,8 +146,7 @@
               "RelativeToolTip": "Text_Based_Game\\String.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-18T08:25:30.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-18T08:25:30.327Z"
             },
             {
               "$type": "Document",
@@ -165,8 +158,7 @@
               "RelativeToolTip": "Text_Based_Game\\Text_Based_Game.cpp",
               "ViewState": "AQIAADsAAAAAAAAAAAAiwFgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-18T07:54:41.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-18T07:54:41.597Z"
             }
           ]
         }
