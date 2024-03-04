@@ -1,11 +1,26 @@
 
 #include <iostream>
+#include <vector>
+#include "String.h"
 using namespace std;
 
 class Room;
 class Item;
 class Player;
 class Enemy;
+
+class Game {
+public:
+    Game() {
+
+    }
+
+    void Run() {
+        bool gameRunning = true;
+        String playerInput;
+
+    }
+};
 
 int main()
 {
@@ -39,4 +54,8 @@ int main()
 
     // Welcome Message
     cout << "Welcome to a galaxy far, far away, mortal." << endl;
+
+    Game game;
+    game.Run();
 }
+
