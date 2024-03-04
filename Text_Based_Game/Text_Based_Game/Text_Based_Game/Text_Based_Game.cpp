@@ -76,13 +76,6 @@ int main() {
             //gameMap.Print(); // commented out for now to see when is best time to update map.
         }
 
-        //Update the map
-        gameMap.SetPlayerPosition(player.GetX(), player.GetY());
-        gameMap.Print();
-
-        // Here, you can add more code to handle other commands
-        // For example, move the player, interact with the map, etc.
-        cout << "--- Code and text ---" << endl;
     }
 
     return 0;

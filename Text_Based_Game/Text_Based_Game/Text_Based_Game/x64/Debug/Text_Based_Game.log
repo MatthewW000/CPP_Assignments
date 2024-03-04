@@ -1,7 +1,9 @@
-﻿  Map.cpp
-  Player.cpp
-  String.cpp
+﻿  GameObject.cpp
+  Map.cpp
   Text_Based_Game.cpp
   Generating Code...
-  LINK : C:\Users\User\Documents\AIE_Year_1\CPP_Assignments\Text_Based_Game\Text_Based_Game\x64\Debug\Text_Based_Game.exe not found or not built by the last incremental link; performing full link
-  Text_Based_Game.vcxproj -> C:\Users\User\Documents\AIE_Year_1\CPP_Assignments\Text_Based_Game\Text_Based_Game\x64\Debug\Text_Based_Game.exe
+Map.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl GameObject::Update(void)" (?Update@GameObject@@UEAAXXZ)
+Player.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl GameObject::Update(void)" (?Update@GameObject@@UEAAXXZ)
+Map.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl GameObject::Draw(void)const " (?Draw@GameObject@@UEBAXXZ)
+Player.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl GameObject::Draw(void)const " (?Draw@GameObject@@UEBAXXZ)
+C:\Users\User\Documents\AIE_Year_1\CPP_Assignments\Text_Based_Game\Text_Based_Game\x64\Debug\Text_Based_Game.exe : fatal error LNK1120: 2 unresolved externals

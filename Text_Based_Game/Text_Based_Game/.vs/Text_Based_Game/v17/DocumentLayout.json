@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\Text_Based_Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\String.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2C362906-729E-420C-A59E-21EEDC01DF65}|Text_Based_Game\\Text_Based_Game.vcxproj|solutionrelative:Text_Based_Game\\Text_Based_Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -45,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,7 +57,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "GameObject.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\GameObject.cpp",
+              "RelativeDocumentMoniker": "Text_Based_Game\\GameObject.cpp",
+              "ToolTip": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\GameObject.cpp",
+              "RelativeToolTip": "Text_Based_Game\\GameObject.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-04T06:12:30.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "GameObject.h",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\GameObject.h",
               "RelativeDocumentMoniker": "Text_Based_Game\\GameObject.h",
@@ -65,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "delete_scalar.cpp",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\delete_scalar.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\delete_scalar.cpp",
@@ -77,20 +93,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Player.cpp",
               "RelativeDocumentMoniker": "Text_Based_Game\\Player.cpp",
               "ToolTip": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Player.cpp",
               "RelativeToolTip": "Text_Based_Game\\Player.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-19T07:50:44.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-19T07:50:44.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Player.h",
               "RelativeDocumentMoniker": "Text_Based_Game\\Player.h",
@@ -102,19 +117,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Map.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Map.cpp",
               "RelativeDocumentMoniker": "Text_Based_Game\\Map.cpp",
               "ToolTip": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Map.cpp",
               "RelativeToolTip": "Text_Based_Game\\Map.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-18T10:19:00.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Map.h",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Map.h",
               "RelativeDocumentMoniker": "Text_Based_Game\\Map.h",
@@ -126,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "String.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\String.cpp",
               "RelativeDocumentMoniker": "Text_Based_Game\\String.cpp",
@@ -138,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "String.h",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\String.h",
               "RelativeDocumentMoniker": "Text_Based_Game\\String.h",
@@ -150,15 +165,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Text_Based_Game.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game.cpp",
               "RelativeDocumentMoniker": "Text_Based_Game\\Text_Based_Game.cpp",
               "ToolTip": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game\\Text_Based_Game.cpp",
               "RelativeToolTip": "Text_Based_Game\\Text_Based_Game.cpp",
-              "ViewState": "AQIAADsAAAAAAAAAAAAiwFgAAAABAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-18T07:54:41.597Z"
+              "WhenOpened": "2024-02-18T07:54:41.597Z",
+              "EditorCaption": ""
             }
           ]
         }

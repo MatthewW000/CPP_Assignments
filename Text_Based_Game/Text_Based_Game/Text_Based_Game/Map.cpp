@@ -1,4 +1,5 @@
 #include "Map.h"
+#include "GameObject.h"
 #include <iostream>
 
 using namespace std;
