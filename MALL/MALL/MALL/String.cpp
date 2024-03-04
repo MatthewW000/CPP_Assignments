@@ -5,10 +5,12 @@
 #include <cstring>
 using namespace std;
 
+
+
 String::String() { //declaring constructor
     m_data = new char[1];
     m_data[0] = '\0'; // Ensures an empty string
-    cout << "++ constructor activated" << endl;
+    //cout << "++ constructor activated" << endl;
 }
 
 /// <summary>
