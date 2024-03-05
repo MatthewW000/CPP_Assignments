@@ -11,12 +11,19 @@ std::ostream& operator<<(std::ostream& os, const String& str) {
     os << str.CStr();
     return os;
 }
-//Enums
+//Enums for class and spells
 enum JediClass {
     JediSentinel,
     JediKnight,
     JediConsular,
     JediShadow
+};
+
+enum JediSpells {
+    ForceShock,
+    ForceWave,
+    ForceBlast,
+    ForceObliterate
 };
 
 // --- Room class
@@ -60,6 +67,7 @@ public:
 class Player {
 private:
     String name;
+    JediClass jediClass;
     int xPosition;
     int yPosition;
     int health;
@@ -69,7 +77,25 @@ private:
 
 public:
     //Constructor to initialize attributes
-    Player(String startName, int startX, int startY, int startHealth, int startMana, int startAttack, int startDefence) : name(startName), xPosition(startX), yPosition(startY), health(startHealth), mana(startMana), attack(startAttack), defence(startDefence) {};
+    Player(String startName, JediClass startClass, int startX, int startY, int startHealth, int startMana, int startAttack, int startDefence) : name(startName), jediClass(startClass), xPosition(startX), yPosition(startY), health(startHealth), mana(startMana), attack(startAttack), defence(startDefence) {
+    
+        // Set attributes based on JediClass
+        switch (startClass) {
+        case JediSentinel:
+            health = 100; mana = 25; attack = 25; defence = 25;
+            break;
+        case JediKnight:
+            health = 120; mana = 15; attack = 35; defence = 20;
+            break;
+        case JediConsular:
+            health = 80; mana = 40; attack = 20; defence = 20;
+            break;
+        case JediShadow:
+            health = 90; mana = 20; attack = 25; defence = 35;
+            break;
+        }
+    };
+
 
     //Getters for player position within the map
     int GetX() const { return xPosition; }
@@ -98,7 +124,7 @@ private:
     Map gameMap; // add this as a member of the game class
     Player player; // init the player in game constructor
 public:
-    Game() : player(" ", 0, 0, 0, 0, 0, 0) {
+    Game() : player(" ",JediSentinel, 0, 0, 0, 0, 0, 0) {
         //Map gets initialized here
     }
 
@@ -106,8 +132,45 @@ public:
         bool gameRunning = true;
         String playerInput;
         String jediName;
+        String classChoice;
+
+        //during run player enters his name
         cout << "Welcome to the order, please enter your name, Jedi: " << endl;
         jediName.ReadFromConsole();
+
+        //Player then selects his class
+        cout << "Select your class Jedi:" << endl;
+        cout << "1. Jedi Sentinel" << endl;
+        cout << "2. Jedi Knight" << endl;
+        cout << "3. Jedi Consular" << endl;
+        cout << "4. Jedi Shadow" << endl;
+        classChoice.ReadFromConsole();
+        classChoice.ToLower();
+
+        //logical if statement to determine Jedi class
+        JediClass chosenClass;
+        if (classChoice.EqualTo("jedi sentinel")) {
+            chosenClass = JediSentinel;
+        }
+        else if (classChoice.EqualTo("jedi knight")) {
+            chosenClass = JediKnight;
+        }
+        else if (classChoice.EqualTo("jedi consular")) {
+            chosenClass = JediConsular;
+        }
+        else if (classChoice.EqualTo("jedi shadow")) {
+            chosenClass = JediShadow;
+        }
+        else {
+            cout << "Invalid choice, defaulting to Jedi Sentinel." << endl;
+            chosenClass = JediSentinel;
+        }
+
+        //then set the name and player class here before we run our game loop...
+        player = Player(jediName, chosenClass, 0, 0);
+
+        //we render map before loop we must change this later to have it 
+        // inside the loop and refresh every instance
         gameMap.Render();
         while (gameRunning) {
             cout << "Enter Command: ";
