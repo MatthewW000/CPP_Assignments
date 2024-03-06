@@ -38,7 +38,8 @@
               "RelativeToolTip": "MALL\\String.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-04T08:50:16.494Z"
+              "WhenOpened": "2024-03-04T08:50:16.494Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,7 +61,7 @@
               "RelativeDocumentMoniker": "MALL\\MALL.cpp",
               "ToolTip": "C:\\Users\\User\\Documents\\AIE_Year_1\\CPP_Assignments\\MALL\\MALL\\MALL\\MALL.cpp",
               "RelativeToolTip": "MALL\\MALL.cpp",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAE8AAACgAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAE0AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-04T06:33:40.899Z",
               "EditorCaption": ""
