@@ -41,6 +41,13 @@ enum JediSpells {
     ForceObliterate
 };
 
+enum ItemTypes {
+    Hollocron,
+    HealthPotion,
+    ManaPotion,
+    Unknown
+};
+
 
 //function for better ux on jedi class to have enum displayed as string
 String JediClassToString(JediClass jediClass) {
@@ -529,19 +536,15 @@ int main()
      .                           .         .               .                 .
                 .                                   .            .                        
 )" << endl;
+
     // Welcome Message
     cout << "Welcome to a galaxy far, far away, mortal." << endl;
     nothing.ReadFromConsole();
     ClearScreen();
+
     // Explaining instructions
     cout << "You are a new Jedi accepted into the order, your first job is to find a hollocron on the planet MALL" << endl;
     nothing.ReadFromConsole();
-
-    cout << "But be warned, being a Jedi is no easy task!" << endl;
-    nothing.ReadFromConsole();
-    ClearScreen();
-    
-
 
     Game game;
     game.Run();
