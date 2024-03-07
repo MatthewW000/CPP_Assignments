@@ -1,3 +1,5 @@
+#pragma once
+
 #include <cstdlib>
 #include <iostream>
 #include <random>
@@ -7,7 +9,7 @@
 #include <map>
 using namespace std;
 
-//function to allow operator overloading;
+//function to allow operator overloading within String utility class;
 std::ostream& operator<<(std::ostream& os, const String& str) {
     // Assuming you have a method CStr() that returns a const char* to the internal string data
     os << str.CStr();
@@ -25,7 +27,6 @@ void ClearScreen() {
 }
 
 
-
 //Enums for class and spells
 enum JediClass {
     JediSentinel,
@@ -41,13 +42,11 @@ enum JediSpells {
     ForceObliterate
 };
 
-enum ItemTypes {
-    Hollocron,
+enum ItemType {
+    Holocron,
     HealthPotion,
-    ManaPotion,
-    Unknown
+    ManaPotion
 };
-
 
 //function for better ux on jedi class to have enum displayed as string
 String JediClassToString(JediClass jediClass) {
@@ -65,6 +64,116 @@ String JediClassToString(JediClass jediClass) {
     }
 }
 
+//beginning of enemy and player
+class Player {
+private:
+    String name;
+    JediClass jediClass;
+    int xPosition;
+    int yPosition;
+
+public:
+    //must make health public to be accessible for battle
+    int health;
+    int mana; //will add functionality to this later
+    int attack; // will add funcitonality to this later
+    int defence; // will add functionality to this later
+    //Constructor to initialize attributes
+    Player(String startName, JediClass startClass, int startX, int startY) : name(startName), jediClass(startClass), xPosition(startX), yPosition(startY) {
+    
+        // Set attributes based on JediClass
+        switch (startClass) {
+        case JediSentinel:
+            health = 100; mana = 25; attack = 25; defence = 25;
+            break;
+        case JediKnight:
+            health = 120; mana = 15; attack = 35; defence = 20;
+            break;
+        case JediConsular:
+            health = 80; mana = 40; attack = 20; defence = 20;
+            break;
+        case JediShadow:
+            health = 90; mana = 20; attack = 25; defence = 35;
+            break;
+        }
+    };
+
+    Player() {};
+    ~Player() {};
+
+
+    //Getters for player position within the map
+    int GetX() const { return xPosition; }
+    int GetY() const { return yPosition; }
+    int GetHealth() const { return health; }
+    int GetAttack() const { return attack; }
+    int GetDefence() const { return defence; }
+    int GetMana() const { return mana; }
+
+    //Method to move the player
+    void Move(char direction) {
+        int newX = xPosition, newY = yPosition;
+
+        switch (direction) {
+        case 'n': newY--; break; // Assuming the top of the map is "north"
+        case 's': newY++; break;
+        case 'e': newX++; break;
+        case 'w': newX--; break;
+        default: cout << "Invalid direction." << endl; return;
+        }
+
+        //Check boundary here:
+        if (newX < 0 || newX >= Map::mapWidth || newY < 0 || newY >= Map::mapHeight) 
+        {
+            cout << "Invalid move: You cannot leave MALL that easily" << endl;
+        }
+        else {
+            xPosition = newX;
+            yPosition = newY;
+        }
+    }
+};
+
+//Item virtual overrides
+class Item {
+public:
+    virtual ~Item() = default;
+    virtual void Use(Player& player) = 0;
+    virtual char GetRepresentation() const { return ' ? '; }
+};
+
+class Holocron : public Item 
+{ 
+public:
+    String nothing;
+    void Use(Player& player) override {
+        cout << "Well done, Jedi, you have found the Holocron and earned your rank amongst the Jedi Masters" << endl;
+        nothing.ReadFromConsole();
+        exit(0); //ends game after finding the holocron
+    }
+};
+
+class HealthPotion : public Item {
+public:
+    String nothing;
+    void Use(Player& player) override {
+        player.health += 10;
+        cout << "Your health has increased by 10." << endl;
+        nothing.ReadFromConsole();
+    }
+};
+
+class ManaPotion : public Item {
+public:
+    String nothing;
+    void Use(Player& player) override {
+        player.mana += 10;
+        cout << "Your mana has increased by 10." << endl;
+        nothing.ReadFromConsole();
+    }
+};
+//End item virtual overrides list
+
 
 class Enemy {
 public:
@@ -74,37 +183,9 @@ public:
 
     Enemy(int x, int y) : xPosition(x), yPosition(y) {}
 };
-
-// --- Room class
-class Room {
-public:
-    string description;
-    bool hasPlayer;
-    bool hasEnemy; //trying this with a pointer to an enemy cause truck the other way
-    //later will add more properties and methods here for items, enemy dark jedi etc.
+//end enemy and player
 
 
-    Room() : description(" - "), hasPlayer(false), hasEnemy(false) {
-
-    }
-
-    ~Room() {};
-
-    void Render() const {
-        if (hasPlayer) {
-            cout << " P ";
-        }
-        else if (hasEnemy) {
-            cout << " S "; // Represent stormtrooper
-        }
-        else {
-            cout << description;
-        }
-    }
-};
-// -- End Room class
-
-// --- Map class
 class Map {
 public:
     vector<Enemy> enemies;
@@ -114,9 +195,9 @@ public:
     Map() {
         SetPlayerPosition(0, 0);
         PopulateEnemies();
-    }; 
+    };
 
-    ~Map() {};
+    ~Map() {}
 
     void SetPlayerPosition(int x, int y) {
 
@@ -134,6 +215,16 @@ public:
         if (x >= 0 && x < mapWidth && y >= 0 && y < mapHeight)
         {
             rooms[y][x].hasPlayer = true; // JFC y is rows and X IS FKIN COLUMNS DONT SPEND 2 HOURS ON THIS AGAIN !!
+        }
+    }
+
+    void PopulateItems() {
+        PlaceItem(new HealthPotion(), 1, 1);
+    }
+
+    void PlaceItem(Item* item, int x, int y) {
+        if (x >= 0 && x < mapWidth && y >= 0 && y < mapHeight) {
+            rooms[y][x].item = item;
         }
     }
 
@@ -207,77 +298,45 @@ public:
     }
 };
 
-class Player {
-private:
-    String name;
-    JediClass jediClass;
-    int xPosition;
-    int yPosition;
-
+// --- Room class
+class Room {
 public:
-    //must make health public to be accessible for battle
-    int health;
-    int mana; //will add functionality to this later
-    int attack; // will add funcitonality to this later
-    int defence; // will add functionality to this later
-    //Constructor to initialize attributes
-    Player(String startName, JediClass startClass, int startX, int startY) : name(startName), jediClass(startClass), xPosition(startX), yPosition(startY) {
-    
-        // Set attributes based on JediClass
-        switch (startClass) {
-        case JediSentinel:
-            health = 100; mana = 25; attack = 25; defence = 25;
-            break;
-        case JediKnight:
-            health = 120; mana = 15; attack = 35; defence = 20;
-            break;
-        case JediConsular:
-            health = 80; mana = 40; attack = 20; defence = 20;
-            break;
-        case JediShadow:
-            health = 90; mana = 20; attack = 25; defence = 35;
-            break;
+    string description;
+    bool hasPlayer;
+    bool hasEnemy; //trying this with a pointer to an enemy cause truck the other way
+    Item* item;
+    //later will add more properties and methods here for items, enemy dark jedi etc.
+
+
+    Room() : description(" - "), hasPlayer(false), hasEnemy(false), item(nullptr) {
+
+    }
+
+    ~Room() {
+        delete item;
+    }
+
+    void Render() const {
+        if (hasPlayer) {
+            cout << " P ";
         }
-    };
-
-    Player() {};
-    ~Player() {};
-
-
-    //Getters for player position within the map
-    int GetX() const { return xPosition; }
-    int GetY() const { return yPosition; }
-    int GetHealth() const { return health; }
-    int GetAttack() const { return attack; }
-    int GetDefence() const { return defence; }
-    int GetMana() const { return mana; }
-
-    //Method to move the player
-    void Move(char direction) {
-        int newX = xPosition, newY = yPosition;
-
-        switch (direction) {
-        case 'n': newY--; break; // Assuming the top of the map is "north"
-        case 's': newY++; break;
-        case 'e': newX++; break;
-        case 'w': newX--; break;
-        default: cout << "Invalid direction." << endl; return;
+        else if (hasEnemy) {
+            cout << " S "; // Represent stormtrooper
         }
-
-        //Check boundary here:
-        if (newX < 0 || newX >= Map::mapWidth || newY < 0 || newY >= Map::mapHeight) 
+        else if (item != nullptr)
         {
-            cout << "Invalid move: You cannot leave MALL that easily" << endl;
+            cout << item->GetRepresentation();
         }
         else {
-            xPosition = newX;
-            yPosition = newY;
+            cout << description;
         }
     }
 };
+// -- End Room class
 
 
-class Item {};
+
+
 
 
 class Game {
@@ -466,7 +525,10 @@ i8 788888       [88888^^ ooo ^^^^^;;77888^^^^;;7787^^^^ ^^;;;;  iiii;i78888888
             // Check for a battle phase
             Room& currentRoom = gameMap.rooms[player.GetY()][player.GetX()];
             Battle(player, currentRoom);
-
+            if (currentRoom.item != nullptr) {
+                currentRoom.item->Use(player);
+                currentRoom.item = nullptr; // Remove item after use
+            }
             gameMap.Render();
             cout << "Make your move, " << JediClassToString(chosenClass) << ", " << jediName << "!" << endl;
             cout << "Your current health is: " << displayHealth << endl;
