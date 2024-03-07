@@ -8,17 +8,17 @@ enum JediClass {
     JediShadow
 };
 
-//Enums for JediSpells
-enum JediSpells {
-    ForceShock,
-    ForceWave,
-    ForceBlast,
-    ForceObliterate
-};
-
-//Enums for Items
-enum ItemType {
-    Holocron,
-    HealthPotion,
-    ManaPotion
-};
+////Enums for JediSpells
+//enum JediSpells {
+//    ForceShock,
+//    ForceWave,
+//    ForceBlast,
+//    ForceObliterate
+//};
+//
+////Enums for Items
+//enum ItemType {
+//    Holocron,
+//    HealthPotion,
+//    ManaPotion
+//};

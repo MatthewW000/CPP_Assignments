@@ -14,6 +14,7 @@
 Map::Map() {
     SetPlayerPosition(0, 0);
     PopulateEnemies();
+    PopulateItems();
 };
 
 Map::~Map() {}

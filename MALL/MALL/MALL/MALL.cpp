@@ -22,6 +22,7 @@ using namespace std;
 
 int main()
 {
+    Game game;
     String nothing;
     // ASCII Art for "MALL"
     cout << R"(
@@ -54,13 +55,12 @@ int main()
     // Welcome Message
     cout << "Welcome to a galaxy far, far away, mortal." << endl;
     nothing.ReadFromConsole();
-    //ClearScreen();
+    game.ClearScreen();
 
     // Explaining instructions
     cout << "You are a new Jedi accepted into the order, your first job is to find a hollocron on the planet MALL" << endl;
     nothing.ReadFromConsole();
 
-    Game game;
     game.Run();
 
     return 0;
